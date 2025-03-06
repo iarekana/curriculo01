@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br"><div id="acessibilidade" class="menu-acessibilidade">
+    <button id="botao-acessibilidade" class="btn btn-primary fw-bold
+    rotacao-botao">Acessibilidade</button>
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+    
+    <button id="aumentar-fonte" onclick="aumentarFonte()" class="btn btn-primary fw-
+    bold">A+</button>
+    
+    <button id="diminuir-fonte" onclick="diminuirFonte()" class="btn btn-primary fw-bold">A-
+    </button>
+    <button id="contraste" class="btn btn-primary fw-bold">Modo Alto Contraste</button>
+    </div>
+    </div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo - Seu Nome</title>
+<style>
+body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; }
+.container { width: 60%; margin: auto; }
+h1, h2 { color: #724343; }
+button { font-size: 1.2em; }
+.menu-acessibilidade {
+position: fixed;
+top: 2rem;
+right: 20px;
+z-index: 1000;
+}
+.rotacao-botao {
+
+transform: rotate(-90deg);
+transform-origin: right center;
+}
+.opcoes-acessibilidade {
+margin-top: 10px;
+display: flex;
+flex-direction: column;
+}
+.opcoes-acessibilidade button {
+margin-bottom: 5px;
+}
+.apresenta-lista {
+display: none; /* Mantemos escondido até ser ativado pelo JS */
+}
+.apresenta-lista {
+display: none; /* Mantemos escondido até ser ativado pelo JS */
+}
+.alto-contraste {
+background-color: black;
+color: yellow;
+}
+.opcoes-acessibilidade {
+background-color: white;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.alto-contraste {
+background-color: black;
+color: yellow;
+}
+</style>
+</head><div id="acessibilidade" class="menu-acessibilidade">
+    <button id="botao-acessibilidade" class="btn btn-primary fw-bold
+    rotacao-botao">Acessibilidade</butto<div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-primary fw-bold
+        rotacao-botao">Acessibilidade</button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+        
+        <button id="aumentar-fonte" onclick="aumentarFonte()" class="btn btn-primary fw-
+        bold">A+</button>
+        
+        <button id="diminuir-fonte" onclick="diminuirFonte()" class="btn btn-primary fw-bold">A-
+        </button>
+        <button id="contraste" class="btn btn-primary fw-bold">Modo Alto Contraste</button>
+        </div>
+        </div>n>
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+    
+    <button id="aumentar-fonte" onclick="aumentarFonte()" class="btn btn-primary fw-
+    bold">A+</button>
+    
+    <button id="diminuir-fonte" onclick="diminuirFonte()" class="btn btn-primary fw-bold">A-
+    </button>
+    <button id="contraste" class="btn btn-primary fw-bold">Modo Alto Contraste</button>
+    </div>
+    </div>
+<body>
+<div class="container">
+<h1>ana caroline machado iarek</h1>
+<p>Email: ana.iarek@escola.pr.gov.br | Telefone: (41) 996103531</p>
+<h2>Resumo</h2>
+<p>habiliddaes em serviços gerais.</p>
+<h2>Formação Acadêmica</h2>
+<p>dom pedro 2 campo largo 2025</p>
+<h2>auxiliar de fabricas </h2>
+<p>Empresa - Cargo - Período</p>
+<h2>agil</h2>
+<ul>
+<li>eficiente</li>
+<li>disposição2</li>
+</ul>
+<h2>Acessibilidade</h2>
+<button onclick="aumentarFonte()">A+</button>
+<button onclick="diminuirFonte()">A-</button>
+<div id="acessibilidade" class="menu-acessibilidade">
+    <button id="botao-acessibilidade" class="btn btn-primary fw-bold
+    rotacao-botao">Acessibilidade</button>
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+        <div id="acessibilidade" class="menu-acessibilidade">
+            <button id="botao-acessibilidade" class="btn btn-primary fw-bold
+            rotacao-botao">Acessibilidade</button>
+            <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+            
+            <button id="aumentar-fonte" onclick="aumentarFonte()" class="btn btn-primary fw-
+            bold">A+</button>
+            
+            <button id="diminuir-fonte" onclick="diminuirFonte()" class="btn btn-primary fw-bold">A-
+            </button>
+            <button id="contraste" class="btn btn-primary fw-bold">Modo Alto Contraste</button>
+            </div>
+            </div>
+    <button id="aumentar-fonte" onclick="aumentarFonte()" class="btn btn-primary fw-
+    bold">A+</button>
+    
+    <button id="diminuir-fonte" onclick="diminuirFonte()" class="btn btn-primary fw-bold">A-
+    </button>
+    <button id="contraste" class="btn btn-primary fw-bold">Modo Alto Contraste</button>
+    </div>
+    </div>
+<script>
+function aumentarFonte() {
+document.body.style.fontSize = 'larger';
+}
+function diminuirFonte() {
+document.body.style.fontSize = 'smaller';
+}
+document.addEventListener('DOMContentLoaded', function() {
+const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
+const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
+const botaoContraste = document.getElementById('contraste');
+botaoDeAcessibilidade.addEventListener('click', function() {
+botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
+opcoesDeAcessibilidade.style.display =
+(opcoesDeAcessibilidade.style.display === 'none' || opcoesDeAcessibilidade.style.display
+=== '')
+? 'block' : 'none';
+});
+botaoContraste.addEventListener('click', function() {
+document.body.classList.toggle('alto-contraste');
+});
+});
+</script>
+</div>
+<div id="acessibilidade" class="menu-acessibilidade">
+    <button id="botao-acessibilidade" class="btn btn-primary fw-bold
+    rotacao-botao">Acessibilidade</button>
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+    
+    <button id="aumentar-fonte" onclick="aumentarFonte()" class="btn btn-primary fw-
+    bold">A+</button>
+    
+    <button id="diminuir-fonte" onclick="diminuirFonte()" class="btn btn-primary fw-bold">A-
+    </button>
+    <button id="contraste" class="btn btn-primary fw-bold">Modo Alto Contraste</button>
+    </div>
+    </div>
+</body>
